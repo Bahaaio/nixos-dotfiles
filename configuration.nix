@@ -86,6 +86,7 @@
     hypridle
     hyprlock
     hyprpicker
+    wlogout
     mpv
     vlc
     neovim
