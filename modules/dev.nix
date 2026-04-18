@@ -13,7 +13,6 @@
     nodejs_24
     cargo
     python3
-    lua
     docker-compose
   ];
 }

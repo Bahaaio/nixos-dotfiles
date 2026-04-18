@@ -32,9 +32,12 @@
     stow
 
     neovim
+    tree-sitter
     nil
     statix
     nixfmt
+    lua
+    luarocks
     lua-language-server
 
     yazi
