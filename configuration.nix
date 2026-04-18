@@ -60,6 +60,11 @@
     firefox.enable = true;
   };
 
+  virtualisation.docker = {
+    enable = true;
+    enableOnBoot = false;
+  };
+
   services = {
     pipewire = {
       enable = true;
@@ -70,10 +75,6 @@
 
     libinput.enable = true;
     displayManager.gdm.enable = true;
-  };
-
-  virtualisation.docker = {
-    enable = true;
   };
 
   environment.systemPackages = with pkgs; [
