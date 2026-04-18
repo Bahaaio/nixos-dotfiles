@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 
 {
   users.users.bahaa.extraGroups = [ "docker" ];
