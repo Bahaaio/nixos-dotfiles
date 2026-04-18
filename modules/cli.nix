@@ -28,6 +28,7 @@
     gh
     playerctl
     brightnessctl
+    wl-clipboard
     stow
 
     neovim
