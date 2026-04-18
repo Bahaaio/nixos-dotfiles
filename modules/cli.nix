@@ -11,7 +11,6 @@
     bat
     lsd
     fzf
-    yazi
     tmux
     sesh
     lazygit
@@ -36,5 +35,12 @@
     statix
     nixfmt
     lua-language-server
+
+    yazi
+    resvg
+    poppler
+    ffmpeg
+    imagemagick
+    _7zz
   ];
 }
