@@ -17,20 +17,27 @@
     wezterm
     kitty
 
-    ulauncher
-    nautilus
-    waybar
-    hyprpaper
-    hypridle
-    hyprlock
-    hyprpicker
-    wlogout
-
     mpv
     vlc
 
+    waybar
+    nautilus
+    ulauncher
+    hyprpaper
+    hypridle
+    hyprlock
+    wlogout
+
+    libreoffice
     localsend
     obsidian
+    discord
+    zapzap
+
+    # dev
+    jetbrains.idea
+    dbeaver-bin
+    postman
   ];
 
   fonts.packages = with pkgs; [
