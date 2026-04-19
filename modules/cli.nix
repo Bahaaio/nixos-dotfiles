@@ -48,6 +48,6 @@
     poppler
     ffmpeg
     imagemagick
-    _7zz
+    p7zip
   ];
 }
