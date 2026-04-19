@@ -2,11 +2,7 @@
 
 {
   imports = [
-    ./modules/cli.nix
-    ./modules/dev.nix
-    ./modules/networking.nix
-    ./modules/desktop.nix
-    ./modules/virtualization.nix
+    ./modules
     ./hardware-configuration.nix
   ];
 
