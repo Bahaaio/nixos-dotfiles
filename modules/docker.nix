@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   users.users.bahaa.extraGroups = [ "docker" ];
@@ -7,4 +7,8 @@
     enable = true;
     enableOnBoot = false;
   };
+
+  environment.systemPackages = with pkgs; [
+    docker-compose
+  ];
 }
