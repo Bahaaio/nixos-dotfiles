@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   services.displayManager.gdm.enable = true;
@@ -33,6 +33,7 @@
     obsidian
     discord
     zapzap
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # dev
     jetbrains.idea
