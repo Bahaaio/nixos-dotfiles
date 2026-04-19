@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     git
+    delta
     wget
     curl
     vim
@@ -24,6 +25,8 @@
     bluetui
     impala
     jq
+    gdu
+    tokei
     gnupg
     gh
     playerctl
