@@ -14,8 +14,10 @@
   users.users.bahaa = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
-    shell = pkgs.zsh;
   };
+
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
 
   nixpkgs.config.allowUnfree = true;
 

@@ -4,8 +4,6 @@
   services.displayManager.gdm.enable = true;
 
   programs = {
-    zsh.enable = true;
-
     hyprland = {
       enable = true;
       xwayland.enable = true;
