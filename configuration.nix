@@ -6,14 +6,29 @@
     ./hardware-configuration.nix
   ];
 
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
   time.timeZone = "Africa/Cairo";
 
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/vda";
+  i18n.defaultLocale = "en_US.UTF-8";
+
+  i18n.extraLocaleSettings = {
+    LC_ADDRESS = "ar_EG.UTF-8";
+    LC_IDENTIFICATION = "ar_EG.UTF-8";
+    LC_MEASUREMENT = "ar_EG.UTF-8";
+    LC_MONETARY = "ar_EG.UTF-8";
+    LC_NAME = "ar_EG.UTF-8";
+    LC_NUMERIC = "ar_EG.UTF-8";
+    LC_PAPER = "ar_EG.UTF-8";
+    LC_TELEPHONE = "ar_EG.UTF-8";
+    LC_TIME = "ar_EG.UTF-8";
+  };
 
   users.users.bahaa = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    description = "Bahaa Mohamed";
+    extraGroups = [ "netowrkmanager" "wheel" ];
   };
 
   programs.zsh.enable = true;
