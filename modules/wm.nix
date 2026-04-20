@@ -23,9 +23,12 @@
     waybar
     nautilus
     ulauncher
-    hyprpaper
     hypridle
+    hyprpaper
+    hyprsunset
     hyprlock
+    copyq
+    dunst
     wlogout
 
     libreoffice
@@ -33,7 +36,9 @@
     obsidian
     discord
     zapzap
-    # inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+    ticktick
+    obs-studio
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # dev
     jetbrains.idea

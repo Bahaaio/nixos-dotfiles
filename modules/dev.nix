@@ -13,5 +13,6 @@
     nodejs_24
     cargo
     python3
+    typst
   ];
 }

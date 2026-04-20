@@ -33,6 +33,7 @@
     brightnessctl
     wl-clipboard
     stow
+    vnstat
 
     neovim
     tree-sitter
