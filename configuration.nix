@@ -28,7 +28,10 @@
   users.users.bahaa = {
     isNormalUser = true;
     description = "Bahaa Mohamed";
-    extraGroups = [ "netowrkmanager" "wheel" ];
+    extraGroups = [
+      "netowrkmanager"
+      "wheel"
+    ];
   };
 
   programs.zsh.enable = true;

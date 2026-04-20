@@ -7,5 +7,6 @@
     ./power.nix
     ./audio.nix
     ./networking.nix
+    ./services.nix
   ];
 }
