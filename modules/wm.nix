@@ -6,6 +6,11 @@
     wayland.enable = true;
   };
 
+  services.displayManager.sddm = {
+    theme = "sddm-astronaut-theme";
+    extraPackages = [ pkgs.sddm-astronaut ];
+  };
+
   programs = {
     hyprland = {
       enable = true;
@@ -26,6 +31,8 @@
   };
 
   environment.systemPackages = with pkgs; [
+    sddm-astronaut
+
     wezterm
     kitty
 
@@ -44,16 +51,23 @@
     wlogout
     grim
     slurp
+    satty
+    flameshot
+    swaybg
+    swayosd
 
     libreoffice
     localsend
     obsidian
     discord
     zapzap
+    pavucontrol
     ticktick
     obs-studio
     qt6.qtwayland
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+    proton-pass
+    protonvpn-gui
 
     # dev
     jetbrains.idea
