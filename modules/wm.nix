@@ -27,8 +27,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    sddm-astronaut
-
     wezterm
     kitty
 
@@ -70,21 +68,50 @@
     jetbrains.idea
     dbeaver-bin
     postman
+
+    # themes
+    sddm-astronaut
+    adwaita-qt
   ];
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
   ];
 
-  # programs.dconf.profiles.user.databases = [
-  #   {
-  #     settings."org/gnome/desktop/interface" = {
-  #       gtk-theme = "Adwaita";
-  #       icon-theme = "Flat-Remix-Red-Dark";
-  #       font-name = "Noto Sans Medium 11";
-  #       document-font-name = "Noto Sans Medium 11";
-  #       monospace-font-name = "Noto Sans Mono Medium 11";
-  #     };
-  #   }
-  # ];
+  gtk = {
+    enable = true;
+
+    theme = {
+      name = "Adwaita-dark";
+      package = pkgs.adwaita-gtk-theme;
+    };
+
+    iconTheme = {
+      name = "Adwaita";
+      package = pkgs.adwaita-icon-theme;
+    };
+  };
+
+  qt = {
+    enable = true;
+    platformTheme = "gtk";
+    style = "adwaita-dark";
+  };
+
+  programs.dconf.profiles.user.databases = [
+    {
+      settings."org/gnome/desktop/interface" = {
+        gtk-theme = "Adwaita";
+        # icon-theme = "Flat-Remix-Red-Dark";
+        # font-name = "Noto Sans Medium 11";
+        # document-font-name = "Noto Sans Medium 11";
+        # monospace-font-name = "Noto Sans Mono Medium 11";
+      };
+    }
+  ];
+
+  environment.sessionVariables = {
+    GTK_THEME = "Adwaita:dark";
+    QT_QPA_PLATFORMTHEME = "gtk3";
+  };
 }
