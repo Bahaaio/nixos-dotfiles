@@ -26,10 +26,6 @@
     extraPortals = with pkgs; [ xdg-desktop-portal-hyprland ];
   };
 
-  environment.sessionVariables = {
-    XDG_CURRENT_DESKTOP = "Hyprland";
-  };
-
   environment.systemPackages = with pkgs; [
     sddm-astronaut
 
@@ -55,6 +51,7 @@
     flameshot
     swaybg
     swayosd
+    gnome-calculator
 
     libreoffice
     localsend
@@ -67,7 +64,7 @@
     qt6.qtwayland
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     proton-pass
-    protonvpn-gui
+    proton-vpn
 
     # dev
     jetbrains.idea

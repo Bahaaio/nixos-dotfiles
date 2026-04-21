@@ -7,6 +7,7 @@
     wget
     curl
     vim
+    tree
     ripgrep
     fd
     bat
@@ -26,6 +27,7 @@
     impala
     jq
     gdu
+    fastfetch
     tokei
     gnupg
     gh
