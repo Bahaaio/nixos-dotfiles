@@ -37,8 +37,6 @@
       SOUND_POWER_SAVE_ON_AC = 0;
       # SOUND_POWER_SAVE_ON_BAT = 1;
 
-      DEVICES_TO_DISABLE_ON_STARTUP = "bluetooth";
-
       # helps save long term battery health
       START_CHARGE_THRESH_BAT0 = 40;
       STOP_CHARGE_THRESH_BAT0 = 60;
