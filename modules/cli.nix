@@ -29,7 +29,6 @@
     gdu
     fastfetch
     tokei
-    gnupg
     gh
     playerctl
     brightnessctl

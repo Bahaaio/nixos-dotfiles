@@ -11,6 +11,11 @@
     gnome.gnome-keyring.enable = true; # Keyring for storing secrets
   };
 
+  programs.gnupg.agent = {
+    enable = true;
+    pinentryPackage = pkgs.pinentry-gnome3;
+  };
+
   systemd.user.services.polkit-gnome-authentication-agent-1 = {
     description = "polkit-gnome-authentication-agent-1";
 
