@@ -36,4 +36,11 @@
     polkit_gnome
     gnome.gvfs
   ];
+
+  # create `micled` group and grant write access to the mic-mute LED sysfs node
+  # so non-root users in this group can toggle the hardware mic indicator
+  users.groups.micled = { };
+  services.udev.extraRules = ''
+    SUBSYSTEM=="leds", KERNEL=="platform::micmute", MODE="0664", GROUP="micled"
+  '';
 }

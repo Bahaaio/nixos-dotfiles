@@ -19,6 +19,7 @@
     extraGroups = [
       "netowrkmanager"
       "wheel"
+      "micled" # allow controlling mic-mute LED
     ];
   };
 
