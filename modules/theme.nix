@@ -28,6 +28,7 @@
     adw-gtk3
     adwaita-qt
     adwaita-icon-theme
+    gnome-themes-extra
     bibata-cursors
   ];
 }
