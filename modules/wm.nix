@@ -34,12 +34,14 @@
     vlc
 
     waybar
+    wttrbar
     nautilus
     ulauncher
     hypridle
     hyprpaper
     hyprsunset
     hyprlock
+    hyprpicker
     copyq
     dunst
     wlogout
