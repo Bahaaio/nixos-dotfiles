@@ -4,9 +4,6 @@
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
-  };
-
-  services.displayManager.sddm = {
     theme = "sddm-astronaut-theme";
     extraPackages = [ pkgs.sddm-astronaut ];
   };
@@ -23,7 +20,10 @@
 
   xdg.portal = {
     enable = true;
-    extraPortals = with pkgs; [ xdg-desktop-portal-hyprland ];
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-hyprland
+    ];
   };
 
   environment.systemPackages = with pkgs; [
@@ -47,6 +47,7 @@
     slurp
     satty
     flameshot
+    pavucontrol
     swaybg
     swayosd
     gnome-calculator
@@ -56,7 +57,7 @@
     obsidian
     discord
     zapzap
-    pavucontrol
+    telegram-desktop
     ticktick
     obs-studio
     qt6.qtwayland
