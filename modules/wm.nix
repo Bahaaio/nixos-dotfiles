@@ -46,9 +46,7 @@
     grim
     slurp
     satty
-    flameshot
     pavucontrol
-    swaybg
     swayosd
     gnome-calculator
 
