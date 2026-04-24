@@ -11,11 +11,6 @@
     };
   };
 
-  hardware.bluetooth = {
-    enable = true;
-    powerOnBoot = false;
-  };
-
   networking.firewall = {
     enable = true;
 
