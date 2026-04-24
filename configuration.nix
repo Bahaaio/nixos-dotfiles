@@ -6,9 +6,6 @@
     ./hardware-configuration.nix
   ];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
   time.timeZone = "Africa/Cairo";
 
   i18n.defaultLocale = "en_US.UTF-8";

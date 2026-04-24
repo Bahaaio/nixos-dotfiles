@@ -11,5 +11,6 @@
     ./networking.nix
     ./services.nix
     ./hardware.nix
+    ./boot.nix
   ];
 }
