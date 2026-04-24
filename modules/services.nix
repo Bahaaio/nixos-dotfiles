@@ -9,6 +9,7 @@
     udisks2.enable = true; # USB drives, disks
     devmon.enable = true;
     gnome.gnome-keyring.enable = true; # Keyring for storing secrets
+    vnstat.enable = true; # Network traffic monitor
   };
 
   programs.gnupg.agent = {

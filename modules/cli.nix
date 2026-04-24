@@ -34,7 +34,6 @@
     brightnessctl
     wl-clipboard
     stow
-    vnstat
     tty-clock
 
     neovim
