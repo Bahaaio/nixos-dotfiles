@@ -34,10 +34,10 @@
     mpv
     vlc
 
+    inputs.walker.packages.${pkgs.stdenv.hostPlatform.system}.default
     waybar
     wttrbar
     nautilus
-    ulauncher
     hypridle
     hyprpaper
     hyprsunset
@@ -63,7 +63,6 @@
     ticktick
     qt6.qtwayland
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-    inputs.walker.packages.${pkgs.stdenv.hostPlatform.system}.default
     proton-pass
     proton-vpn
 
