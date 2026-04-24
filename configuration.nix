@@ -28,6 +28,9 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  # for running prebuilt binaries (e.g. Mason LSPs)
+  programs.nix-ld.enable = true;
+
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"

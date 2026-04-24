@@ -35,15 +35,14 @@
     wl-clipboard
     stow
     vnstat
+    tty-clock
 
     neovim
     tree-sitter
-    nil
     statix
     nixfmt
-    lua
+    lua5_1
     luarocks
-    lua-language-server
 
     yazi
     resvg
