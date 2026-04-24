@@ -1,18 +1,20 @@
 { pkgs, ... }:
 
 {
-  hardware.graphics = {
-    enable = true;
+  hardware = {
+    graphics = {
+      enable = true;
 
-    extraPackages = with pkgs; [
-      intel-media-driver
-      mesa
-      libva
-    ];
-  };
+      extraPackages = with pkgs; [
+        intel-media-driver
+        mesa
+        libva
+      ];
+    };
 
-  hardware.bluetooth = {
-    enable = true;
-    powerOnBoot = false;
+    bluetooth = {
+      enable = true;
+      powerOnBoot = false;
+    };
   };
 }
