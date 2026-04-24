@@ -16,6 +16,7 @@
     };
 
     firefox.enable = true;
+    obs-studio.enable = true;
   };
 
   xdg.portal = {
@@ -59,7 +60,6 @@
     zapzap
     telegram-desktop
     ticktick
-    obs-studio
     qt6.qtwayland
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     proton-pass
