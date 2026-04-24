@@ -1,11 +1,15 @@
 { inputs, pkgs, ... }:
 
 {
-  services.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-    theme = "sddm-astronaut-theme";
-    extraPackages = [ pkgs.sddm-astronaut ];
+  services = {
+    displayManager.sddm = {
+      enable = true;
+      wayland.enable = true;
+      theme = "sddm-astronaut-theme";
+      extraPackages = [ pkgs.sddm-astronaut ];
+    };
+
+    elephant.enable = true;
   };
 
   programs = {
@@ -62,6 +66,7 @@
     ticktick
     qt6.qtwayland
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.walker.packages.${pkgs.stdenv.hostPlatform.system}.default
     proton-pass
     proton-vpn
 
