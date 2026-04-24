@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     gcc
     clang
+    cmake
     gnumake
     jdk
     jdk25
