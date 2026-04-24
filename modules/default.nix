@@ -4,6 +4,7 @@
     ./cli.nix
     ./dev.nix
     ./theme.nix
+    ./fonts.nix
     ./docker.nix
     ./power.nix
     ./audio.nix
