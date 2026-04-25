@@ -20,6 +20,5 @@
 
   environment.sessionVariables = {
     JAVA_HOME = "${pkgs.jdk}";
-    _JAVA_OPTIONS = "-Dawt.useSystemAAFontSettings=setting";
   };
 }
