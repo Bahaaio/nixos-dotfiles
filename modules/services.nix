@@ -42,6 +42,8 @@
   # so non-root users in this group can toggle the hardware mic indicator
   users.groups.micled = { };
   services.udev.extraRules = ''
-    SUBSYSTEM=="leds", KERNEL=="platform::micmute", MODE="0664", GROUP="micled"
+    ACTION=="change", SUBSYSTEM=="leds", KERNEL=="platform::micmute", GROUP="micled", MODE="0664", \
+    RUN+="${pkgs.coreutils}/bin/chgrp micled /sys/class/leds/platform::micmute/brightness", \
+    RUN+="${pkgs.coreutils}/bin/chmod 0664 /sys/class/leds/platform::micmute/brightness"
   '';
 }
