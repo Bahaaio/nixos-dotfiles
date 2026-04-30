@@ -12,6 +12,7 @@
     fd
     bat
     lsd
+    openssl
     fzf
     tmux
     sesh
@@ -34,6 +35,7 @@
     brightnessctl
     wl-clipboard
     stow
+    tesseract
     tty-clock
 
     neovim
