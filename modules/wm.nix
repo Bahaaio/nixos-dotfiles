@@ -1,14 +1,15 @@
 { inputs, pkgs, ... }:
 
 {
-  services.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-    theme = "sddm-astronaut-theme";
-    extraPackages = [ pkgs.sddm-astronaut ];
-  };
+  imports = [ inputs.silentSDDM.nixosModules.default ];
 
   programs = {
+    silentSDDM = {
+      enable = true;
+      theme = "default";
+      # profileIcons.bahaa = "";
+    };
+
     hyprland = {
       enable = true;
       xwayland.enable = true;
@@ -16,6 +17,11 @@
     };
 
     obs-studio.enable = true;
+
+    nautilus-open-any-terminal = {
+      enable = true;
+      terminal = "wezterm";
+    };
   };
 
   xdg.portal = {
@@ -70,12 +76,5 @@
     jetbrains.idea
     dbeaver-bin
     postman
-
-    sddm-astronaut
   ];
-
-  programs.nautilus-open-any-terminal = {
-    enable = true;
-    terminal = "wezterm";
-  };
 }
