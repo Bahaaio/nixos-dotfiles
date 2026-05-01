@@ -21,5 +21,7 @@
       "udev.log_level=3"
       "systemd.show_status=auto"
     ];
+
+    extraModprobeConfig = "options asus_wmi fnlock_default=N";
   };
 }
