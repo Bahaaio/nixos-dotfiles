@@ -14,6 +14,7 @@
     fnm
     nodejs_24
     cargo
+    uv
     python3
     typst
   ];

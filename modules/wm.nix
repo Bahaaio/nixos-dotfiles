@@ -12,8 +12,8 @@
 
     hyprland = {
       enable = true;
-      xwayland.enable = true;
       withUWSM = true;
+      xwayland.enable = true;
     };
 
     obs-studio.enable = true;
@@ -55,6 +55,7 @@
     grim
     slurp
     satty
+    eog
     pavucontrol
     swayosd
 
@@ -70,10 +71,13 @@
     qt6.qtwayland
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     proton-pass
+    zathura
     proton-vpn
 
     # dev
     jetbrains.idea
+    jetbrains.pycharm
+    jupyter
     dbeaver-bin
     postman
   ];
