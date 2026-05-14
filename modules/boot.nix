@@ -8,10 +8,7 @@
       timeout = 0;
     };
 
-    plymouth = {
-      enable = true;
-      theme = "bgrt";
-    };
+    plymouth.enable = true;
 
     # silent boot
     consoleLogLevel = 3;

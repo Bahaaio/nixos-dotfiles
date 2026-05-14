@@ -12,6 +12,7 @@
     fd
     bat
     lsd
+    procps
     openssl
     fzf
     tmux
@@ -29,6 +30,7 @@
     jq
     gdu
     fastfetch
+    nitch
     tokei
     gh
     playerctl

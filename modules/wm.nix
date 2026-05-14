@@ -7,7 +7,6 @@
     silentSDDM = {
       enable = true;
       theme = "default";
-      # profileIcons.bahaa = "";
     };
 
     hyprland = {
@@ -17,6 +16,7 @@
     };
 
     obs-studio.enable = true;
+    gpu-screen-recorder.enable = true;
 
     nautilus-open-any-terminal = {
       enable = true;
@@ -38,6 +38,7 @@
 
     mpv
     vlc
+    celluloid
 
     walker
     elephant
@@ -55,9 +56,10 @@
     grim
     slurp
     satty
-    eog
+    loupe
     pavucontrol
     swayosd
+    gpu-screen-recorder-gtk
 
     gnome-weather
     gnome-calculator

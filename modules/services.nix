@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   programs.dconf.enable = true;
-  security.polkit.enable = true; # Optional automount helper
+  security.polkit.enable = true;
 
   services = {
     dbus.enable = true;
