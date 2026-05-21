@@ -46,6 +46,7 @@
     nixfmt
     lua5_1
     luarocks
+    ueberzugpp
 
     yazi
     resvg

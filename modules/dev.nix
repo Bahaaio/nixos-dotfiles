@@ -11,9 +11,7 @@
     maven
     gradle
     go
-    fnm
-    nodejs_24
-    cargo
+    nodejs
     uv
     python3
     typst

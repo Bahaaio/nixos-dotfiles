@@ -37,7 +37,6 @@
     kitty
 
     mpv
-    vlc
     celluloid
 
     walker
