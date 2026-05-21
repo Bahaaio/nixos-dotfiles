@@ -3,10 +3,14 @@
 {
   services.logind = {
     settings.Login = {
-      HandleLidSwitch = "suspend";
-      HandlePowerKey = "suspend";
+      HandleLidSwitch = "suspend-then-hibernate";
+      HandlePowerKey = "suspend-then-hibernate";
       HandlePowerKeyLongPress = "reboot";
     };
+  };
+
+  systemd.sleep.settings.Sleep = {
+    HibernateDelaySec = "2h";
   };
 
   services.tlp = {
