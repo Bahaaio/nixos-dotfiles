@@ -12,5 +12,6 @@
     ./services.nix
     ./hardware.nix
     ./boot.nix
+    ./gaming.nix
   ];
 }

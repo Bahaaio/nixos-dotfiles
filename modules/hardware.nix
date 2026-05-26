@@ -4,6 +4,7 @@
   hardware = {
     graphics = {
       enable = true;
+      enable32Bit = true;
 
       extraPackages = with pkgs; [
         intel-media-driver
@@ -14,7 +15,7 @@
 
     bluetooth = {
       enable = true;
-      powerOnBoot = false;
+      powerOnBoot = true;
     };
   };
 }
