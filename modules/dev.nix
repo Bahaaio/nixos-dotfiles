@@ -7,9 +7,7 @@
     cmake
     gnumake
     jdk
-    jdk25
     maven
-    gradle
     go
     nodejs
     uv
