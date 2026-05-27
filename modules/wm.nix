@@ -26,6 +26,7 @@
 
   xdg.portal = {
     enable = true;
+
     extraPortals = with pkgs; [
       xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
@@ -34,11 +35,6 @@
 
   environment.systemPackages = with pkgs; [
     wezterm
-    kitty
-
-    mpv
-    celluloid
-
     walker
     elephant
     waybar
@@ -55,11 +51,17 @@
     grim
     slurp
     satty
-    loupe
     pavucontrol
     swayosd
     gpu-screen-recorder-gtk
 
+    # media
+    mpv
+    celluloid
+    loupe
+
+    papers
+    gnome-text-editor
     gnome-weather
     gnome-calculator
     libreoffice
@@ -77,8 +79,6 @@
 
     # dev
     jetbrains.idea
-    jetbrains.pycharm
-    jupyter
     dbeaver-bin
     postman
   ];
