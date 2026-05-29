@@ -1,5 +1,12 @@
 { pkgs, ... }:
+
 {
+  imports = [
+    ./sddm.nix
+    ./audio.nix
+    ./network.nix
+  ];
+
   programs.dconf.enable = true;
   security.polkit.enable = true;
 

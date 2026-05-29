@@ -17,7 +17,7 @@
 
   environment.systemPackages = with pkgs; [
     mangohud
-    modrinth-app
+    # modrinth-app
 
     # proton-ge
     # lutris

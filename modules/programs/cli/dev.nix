@@ -13,6 +13,7 @@
     uv
     python3
     typst
+    cargo
   ];
 
   environment.sessionVariables = {
