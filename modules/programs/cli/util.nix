@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -8,5 +8,6 @@
     openssl
     playerctl
     brightnessctl
+    inputs.go-pray.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

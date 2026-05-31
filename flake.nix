@@ -11,6 +11,10 @@
       url = "github:uiriansan/SilentSDDM";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    go-pray = {
+      url = "github:0xzer0x/go-pray";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
