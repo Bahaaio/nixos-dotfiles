@@ -21,7 +21,12 @@
         specialArgs = {
           inherit inputs;
         };
-        modules = [ ./configuration.nix ];
+        modules = [
+          ./configuration.nix
+          {
+            nixpkgs.overlays = [ (import ./packages/overlay.nix) ];
+          }
+        ];
       };
     };
 }
