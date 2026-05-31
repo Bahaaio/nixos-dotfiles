@@ -6,5 +6,6 @@
   programs.silentSDDM = {
     enable = true;
     theme = "default";
+    profileIcons.bahaa = "/etc/avatar";
   };
 }
