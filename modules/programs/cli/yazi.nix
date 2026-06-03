@@ -4,9 +4,9 @@
   environment.systemPackages = with pkgs; [
     yazi
     resvg
-    poppler
-    ffmpeg
+    poppler-utils
+    ffmpeg-headless
     imagemagick
-    p7zip
+    _7zz
   ];
 }
