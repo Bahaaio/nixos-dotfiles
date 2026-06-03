@@ -1,17 +1,20 @@
 { ... }:
 
 {
+  programs.nh = {
+    enable = true;
+    flake = "/home/bahaa/nixos-dotfiles";
+    clean = {
+      enable = true;
+      extraArgs = "--keep-since 14d --keep 3 --optimise";
+    };
+  };
+
   nix = {
     settings.experimental-features = [
       "nix-command"
       "flakes"
     ];
-
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 7d";
-    };
   };
 
   nixpkgs.config.allowUnfree = true;
