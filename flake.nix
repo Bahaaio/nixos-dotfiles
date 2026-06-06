@@ -27,5 +27,9 @@
       url = "github:Mic92/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    pomo = {
+      url = "github:Bahaaio/pomo";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 }

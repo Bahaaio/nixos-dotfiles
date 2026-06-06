@@ -55,11 +55,32 @@
         "type": "indirect"
       }
     },
+    "pomo": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1780789081,
+        "narHash": "sha256-ObcZgUMd5IWPVq4Wd+6c1eKG6jnWk4yYmIDsBi3Chq8=",
+        "owner": "Bahaaio",
+        "repo": "pomo",
+        "rev": "89fb5305b442960e11326f56ff6bfee52f5706af",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Bahaaio",
+        "repo": "pomo",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "go-pray": "go-pray",
         "nix-index-database": "nix-index-database",
         "nixpkgs": "nixpkgs",
+        "pomo": "pomo",
         "silentSDDM": "silentSDDM",
         "zen-browser": "zen-browser"
       }
