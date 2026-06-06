@@ -15,10 +15,19 @@
       url = "github:0xzer0x/go-pray";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-index-database = {
+      url = "github:Mic92/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
-    { self, nixpkgs, ... }@inputs:
+    {
+      self,
+      nixpkgs,
+      nix-index-database,
+      ...
+    }@inputs:
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -27,6 +36,7 @@
         };
         modules = [
           ./configuration.nix
+          nix-index-database.nixosModules.default
           {
             nixpkgs.overlays = [ (import ./packages/overlay.nix) ];
           }
