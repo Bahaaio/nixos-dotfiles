@@ -8,12 +8,6 @@ in
   nixos = nixosSystem {
     system = "x86_64-linux";
     inherit specialArgs;
-    modules = [
-      ./laptop
-      inputs.nix-index-database.nixosModules.default
-      {
-        nixpkgs.overlays = [ (import ../pkgs) ];
-      }
-    ];
+    modules = [ ./laptop ];
   };
 }
