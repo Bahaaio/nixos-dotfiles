@@ -38,7 +38,7 @@
           ./configuration.nix
           nix-index-database.nixosModules.default
           {
-            nixpkgs.overlays = [ (import ./packages/overlay.nix) ];
+            nixpkgs.overlays = [ (import ./pkgs) ];
           }
         ];
       };
