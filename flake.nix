@@ -1,6 +1,14 @@
 {
   description = "living on the edge";
 
+  outputs =
+    { nixpkgs, ... }@inputs:
+    {
+      nixosConfigurations = import ./hosts {
+        inherit nixpkgs inputs;
+      };
+    };
+
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     zen-browser = {
@@ -20,12 +28,4 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-
-  outputs =
-    { nixpkgs, ... }@inputs:
-    {
-      nixosConfigurations = import ./hosts {
-        inherit nixpkgs inputs;
-      };
-    };
 }
