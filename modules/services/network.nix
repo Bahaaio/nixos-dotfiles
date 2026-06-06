@@ -2,7 +2,6 @@
 
 {
   networking = {
-    hostName = "nixos";
     wireless.iwd.enable = true;
 
     networkmanager = {

@@ -22,25 +22,10 @@
   };
 
   outputs =
+    { nixpkgs, ... }@inputs:
     {
-      self,
-      nixpkgs,
-      nix-index-database,
-      ...
-    }@inputs:
-    {
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = {
-          inherit inputs;
-        };
-        modules = [
-          ./configuration.nix
-          nix-index-database.nixosModules.default
-          {
-            nixpkgs.overlays = [ (import ./pkgs) ];
-          }
-        ];
+      nixosConfigurations = import ./hosts {
+        inherit nixpkgs inputs;
       };
     };
 }
