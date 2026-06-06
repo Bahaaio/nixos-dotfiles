@@ -9,6 +9,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    pavucontrol
     mpv
     loupe
     celluloid

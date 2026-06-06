@@ -13,7 +13,6 @@
   environment.systemPackages = with pkgs; [
     wezterm
     nautilus
-    pavucontrol
 
     gnome-text-editor
     gnome-weather
