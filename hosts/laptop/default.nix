@@ -7,6 +7,7 @@
     ../../modules/nix
     ../../modules/core
     ../../modules/services
+    ../../modules/hardware
 
     ../../modules/desktop
     ../../modules/desktop/hyprland.nix
