@@ -7,6 +7,7 @@
     extraGroups = [
       "netowrkmanager"
       "wheel"
+      "libvirtd"
       "micled" # allow controlling mic-mute LED
     ];
   };
