@@ -1,8 +1,11 @@
-{ ... }:
+{ inputs, ... }:
 
 {
   nixpkgs = {
     config.allowUnfree = true;
-    overlays = [ (import ../../pkgs) ];
+    overlays = [
+      inputs.nix-output-monitor.overlays.default
+      (import ../../pkgs)
+    ];
   };
 }

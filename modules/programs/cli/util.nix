@@ -10,6 +10,7 @@
     openssl
     playerctl
     brightnessctl
+    nix-output-monitor
     inputs.go-pray.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

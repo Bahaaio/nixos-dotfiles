@@ -31,5 +31,9 @@
       url = "github:Bahaaio/pomo";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-output-monitor = {
+      url = "github:maralorn/nix-output-monitor";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 }
