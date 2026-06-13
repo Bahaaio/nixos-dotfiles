@@ -1,13 +1,9 @@
 {
   description = "living on the edge";
 
-  outputs =
-    { nixpkgs, ... }@inputs:
-    {
-      nixosConfigurations = import ./hosts {
-        inherit nixpkgs inputs;
-      };
-    };
+  outputs = inputs: {
+    nixosConfigurations = import ./hosts { inherit inputs; };
+  };
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";

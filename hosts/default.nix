@@ -1,13 +1,13 @@
-{ nixpkgs, inputs, ... }:
+{ inputs, ... }:
 
 let
-  inherit (nixpkgs.lib) nixosSystem;
+  inherit (inputs.nixpkgs.lib) nixosSystem;
   specialArgs = { inherit inputs; };
+  system = "x86_64-linux";
 in
 {
   nixos = nixosSystem {
-    system = "x86_64-linux";
-    inherit specialArgs;
+    inherit system specialArgs;
     modules = [ ./laptop ];
   };
 }
