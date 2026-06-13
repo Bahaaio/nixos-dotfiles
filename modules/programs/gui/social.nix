@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    discord
+    vesktop
     zapzap
     telegram-desktop
   ];
