@@ -3,6 +3,7 @@
 {
   imports = [
     ./sddm.nix
+    ./power.nix
     ./audio.nix
     ./network.nix
     ./polkit-agent.nix
