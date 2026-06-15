@@ -5,6 +5,7 @@
     ./sddm.nix
     ./audio.nix
     ./network.nix
+    ./polkit-agent.nix
   ];
 
   programs.dconf.enable = true;
@@ -12,38 +13,16 @@
 
   services = {
     dbus.enable = true;
-    gvfs.enable = true; # Mount, trash, network drives
-    udisks2.enable = true; # USB drives, disks
-    devmon.enable = true;
-    gnome.gnome-keyring.enable = true; # Keyring for storing secrets
-    vnstat.enable = true; # Network traffic monitor
+    udisks2.enable = true; # disk and USB drive management
+    gvfs.enable = true; # trash, network sharing, and MTP support
+    gnome.gnome-keyring.enable = true; # keyring for storing secrets
+    vnstat.enable = true; # network usage statistics
   };
 
   programs.gnupg.agent = {
     enable = true;
     pinentryPackage = pkgs.pinentry-gnome3;
   };
-
-  systemd.user.services.polkit-gnome-authentication-agent-1 = {
-    description = "polkit-gnome-authentication-agent-1";
-
-    wantedBy = [ "graphical-session.target" ];
-    wants = [ "graphical-session.target" ];
-    after = [ "graphical-session.target" ];
-
-    serviceConfig = {
-      Type = "simple";
-      ExecStart = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
-      Restart = "on-failure";
-      RestartSec = 1;
-      TimeoutStopSec = 10;
-    };
-  };
-
-  environment.systemPackages = with pkgs; [
-    polkit_gnome
-    gnome.gvfs
-  ];
 
   # create `micled` group and grant write access to the mic-mute LED sysfs node
   # so non-root users in this group can toggle the hardware mic indicator
