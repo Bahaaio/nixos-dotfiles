@@ -19,10 +19,6 @@
       url = "github:0xzer0x/go-pray";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nix-index-database = {
-      url = "github:Mic92/nix-index-database";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     pomo = {
       url = "github:Bahaaio/pomo";
       inputs.nixpkgs.follows = "nixpkgs";

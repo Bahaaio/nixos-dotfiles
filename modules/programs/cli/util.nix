@@ -1,8 +1,6 @@
 { inputs, pkgs, ... }:
 
 {
-  programs.nix-index-database.comma.enable = true;
-
   environment.systemPackages = with pkgs; [
     gh
     tokei

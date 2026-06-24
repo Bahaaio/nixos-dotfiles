@@ -1,10 +1,9 @@
-{ inputs, ... }:
+{ ... }:
 
 {
   imports = [
     ./nh.nix
     ./nixpkgs.nix
-    inputs.nix-index-database.nixosModules.default
   ];
 
   nix = {
