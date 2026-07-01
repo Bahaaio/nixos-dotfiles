@@ -19,8 +19,6 @@
     gnome-calculator
 
     proton-vpn
-    proton-pass
-
     ticktick
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
