@@ -6,7 +6,12 @@
     ./users.nix
   ];
 
-  programs.zsh.enable = true;
+  programs.zsh = {
+    enable = true;
+    enableGlobalCompInit = false;
+    enableLsColors = false;
+  };
+
   users.defaultUserShell = pkgs.zsh;
 
   time.timeZone = "Africa/Cairo";
