@@ -7,6 +7,7 @@
     gamescope = {
       enable = true;
       capSysNice = true;
+      args = [ "--rt" ];
     };
 
     steam = {
@@ -17,7 +18,7 @@
 
   environment.systemPackages = with pkgs; [
     mangohud
-    # modrinth-app
+    prismlauncher
 
     # proton-ge
     # lutris
