@@ -9,6 +9,7 @@
     jdk
     maven
     go
+    dotnet-sdk
     nodejs
     uv
     python3
