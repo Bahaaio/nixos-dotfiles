@@ -4,7 +4,7 @@
   environment.systemPackages = with pkgs; [
     papers
     zathura
-    obsidian
+    # obsidian
     libreoffice
   ];
 }
