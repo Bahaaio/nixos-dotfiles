@@ -9,7 +9,7 @@
     jdk
     maven
     go
-    dotnet-sdk
+    dotnet-sdk_10
     nodejs
     uv
     python3
