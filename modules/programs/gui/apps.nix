@@ -12,6 +12,7 @@
 
   environment.systemPackages = with pkgs; [
     wezterm
+    kitty
     nautilus
 
     gnome-text-editor
