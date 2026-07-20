@@ -45,8 +45,6 @@
     wmctrl
     xsensors
     numlockx
-
-    gnome-calendar
     redshift
   ];
 }
