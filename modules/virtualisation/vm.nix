@@ -6,6 +6,4 @@
   virtualisation = {
     libvirtd.enable = true;
   };
-
-  # TODO: quickemu & quickgui
 }
