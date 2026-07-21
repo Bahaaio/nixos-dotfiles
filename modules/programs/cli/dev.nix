@@ -10,6 +10,7 @@
     maven
     go
     dotnet-sdk_10
+    dotnet-ef
     nodejs
     uv
     python3
